@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, p,
+h1, h2, h3, h4, h5, h6,
+object, iframe, a,
+em, strong, b, u, i, img, figure, blockquote,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, section, menu, nav, address,
+input, select, button, textarea{
+	all: unset;
+	display: block
+}
+
+span, a, br, em, strong, input, label, img{
+	display: inline-block
+}

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+::placeholder{
+	color:var(--color-gray-70);
+}
+
+input{
+	width: 100%;
+	height: 56px;
+	padding:0 16px;
+	box-sizing : border-box;
+	box-shadow: inset 0 0 0 1px var(--color-gray-20);
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.3s
+}
+
+textarea{
+	width: 100%;
+	padding:20px 16px;
+	box-sizing : border-box;
+	box-shadow: inset 0 0 0 1px var(--color-gray-20);
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.3s
+}
+
+select{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 200px;
+	height: 56px;
+	padding:0 16px;
+	box-sizing : border-box;
+	box-shadow: inset 0 0 0 1px var(--color-gray-20);
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.3s
+}
+
+:where(input, textarea, select):focus{
+	box-shadow: inset 0 0 0 1px var(--color-primary-70)
+}
+
+:where(input, textarea, select):disabled{
+	background-color: var(--color-gray-05)
+}
+
+input[type="checkbox"]{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	margin: -1px;
+	clip-path: inset(50%);
+}
+
+input[type="checkbox"] + label{
+	height: 24px;
+	background:url(../img/ico_check_off.svg) no-repeat left center
+}
+
+input[type="checkbox"]:checked + label{
+	height: 24px;
+	background:url(../img/ico_check_on.svg) no-repeat left center
+}
+
+input[type="file"]::file-selector-button{
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap
+}
+
+.common-btn{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-sizing: border-box;
+	user-select: none;
+	transition: 0.3s
+}
+
+.round-btn{
+	border-radius: 100px	
+}
+
+.fil-primary-btn{
+	color: var(--color-gray-00);
+	background-color: var(--color-primary-70)
+}
+
+.fil-primary-btn:hover{
+	background-color: var(--color-primary-80)
+}
+
+.fil-black-btn{
+	color: var(--color-gray-00);
+	background-color: var(--color-gray-90)
+}
+
+.fil-black-btn:hover{
+	background-color: var(--color-gray-95)
+}
+
+.fil-gray-btn{
+	color: var(--color-gray-00);
+	background-color: var(--color-gray-30)
+}
+
+.fil-gray-btn:hover{
+	background-color: var(--color-gray-40)
+}
+
+.btn-48{
+	height: 48px;
+	padding:0 28px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1
+}
+
+.btn-56{
+	height: 56px;
+	padding:0 32px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1	
+}

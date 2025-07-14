@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.login__wrap{
+	padding:80px 0 160px;
+	box-sizing: border-box;
+	transition: padding 0.3s
+}
+
+.login{
+	max-width: 400px;
+	margin:0 auto
+}
+
+.login__tit{
+	margin-bottom: 40px;
+	text-align: center
+}
+
+.login__grid{
+	display: flex;
+	flex-direction: column;
+	gap:20px
+}
+
+.login__label{
+	margin-bottom: 4px
+}
+
+.login__auto-label{
+	padding-left: 32px;
+	user-select: none
+}
+
+.login__btn-wrap{
+	width:100%
+}
+
+.login__btn{
+	width:100%;
+	border-radius: 4px
+}
+
+@media all and (max-width:1024px) {
+
+
+}
+
+@media all and (max-width:768px){
+	.login__wrap{
+		padding:40px 0 80px
+	}
+}
